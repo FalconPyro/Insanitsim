@@ -3,7 +3,6 @@ package falconpyro.mods.insanitsim.event;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import falconpyro.mods.insanitsim.config.InsanitsimConfig;
-import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.BonemealEvent;

@@ -20,14 +20,18 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event){
         forgeEvents = new ForgeEventHandler();
         InsanitsimConfig.init(new Configuration(event.getSuggestedConfigurationFile()));
-        InsanitsimContent.tab = new InsanitsimTab();
-        InsanitsimContent.cactusMaterial = new ItemPlaceholder("material.cactus");
-        InsanitsimContent.cactusPickaxe  = new ItemPlaceholder("pickaxe.cactus");
-        InsanitsimContent.cactusShovel   = new ItemPlaceholder("shovel.cactus");
-        InsanitsimContent.cactusAxe      = new ItemPlaceholder("axe.cactus");
-        InsanitsimContent.cactusHoe      = new ItemPlaceholder("hoe.cactus");
-        InsanitsimContent.cactusSword    = new ItemPlaceholder("sword.cactus");
-        InsanitsimContent.cactusFood     = new ItemPlaceholder("food.cactus");
+        InsanitsimContent.tab              = new InsanitsimTab();
+        InsanitsimContent.cactusMaterial   = new ItemPlaceholder("material.cactus");
+        InsanitsimContent.cactusPickaxe    = new ItemPlaceholder("pickaxe.cactus");
+        InsanitsimContent.cactusShovel     = new ItemPlaceholder("shovel.cactus");
+        InsanitsimContent.cactusAxe        = new ItemPlaceholder("axe.cactus");
+        InsanitsimContent.cactusHoe        = new ItemPlaceholder("hoe.cactus");
+        InsanitsimContent.cactusSword      = new ItemPlaceholder("sword.cactus");
+        InsanitsimContent.cactusFood       = new ItemPlaceholder("food.cactus");
+        InsanitsimContent.cactusHelmet     = new ItemPlaceholder("armour.cactus.head");
+        InsanitsimContent.cactusChestplate = new ItemPlaceholder("armour.cactus.chest");
+        InsanitsimContent.cactusLeggings   = new ItemPlaceholder("armour.cactus.leg");
+        InsanitsimContent.cactusBoots      = new ItemPlaceholder("armour.cactus.boot");
     }
 
     public void init(FMLInitializationEvent event){}

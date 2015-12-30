@@ -12,5 +12,6 @@ public class InsanitsimContent {
 
     //Items
     public static Item
-        cactusMaterial, cactusPickaxe, cactusShovel, cactusAxe, cactusHoe, cactusSword, cactusFood;
+        cactusMaterial, cactusPickaxe, cactusShovel, cactusAxe, cactusHoe, cactusSword, cactusFood,
+        cactusHelmet, cactusChestplate, cactusLeggings, cactusBoots;
 }
