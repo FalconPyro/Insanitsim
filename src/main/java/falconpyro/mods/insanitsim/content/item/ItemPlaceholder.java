@@ -18,7 +18,7 @@ public class ItemPlaceholder extends Item {
         setCreativeTab(InsanitsimContent.tab);
         GameRegistry.registerItem(this, name);
     }
-    
+
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List tooltip, boolean debug) {
         tooltip.add("This item does nothing");
