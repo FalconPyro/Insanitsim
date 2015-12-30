@@ -1,0 +1,10 @@
+/eclipse/
+/gradle/
+/.gradle/
+/build/
+/out/
+/Insanitsim.iml
+/Insanitsim.ipr
+/Insanitsim.iws
+/gradlew
+/gradlew.bat
