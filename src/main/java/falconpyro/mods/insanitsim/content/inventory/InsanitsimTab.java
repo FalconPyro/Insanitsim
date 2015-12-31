@@ -1,6 +1,7 @@
 package falconpyro.mods.insanitsim.content.inventory;
 
-import falconpyro.mods.insanitsim.content.item.InsanitsimContent;
+import falconpyro.mods.insanitsim.content.InsanitsimContent;
+import falconpyro.mods.insanitsim.content.item.InsanitsimItems;
 import falconpyro.mods.insanitsim.lib.LibModInfo;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -15,6 +16,6 @@ public class InsanitsimTab extends CreativeTabs{
 
     @Override
     public Item getTabIconItem() {
-        return InsanitsimContent.cactusPickaxe;
+        return InsanitsimItems.cactusPickaxe;
     }
 }

@@ -1,6 +1,7 @@
 package falconpyro.mods.insanitsim.content.item;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import falconpyro.mods.insanitsim.content.InsanitsimContent;
 import falconpyro.mods.insanitsim.lib.LibModInfo;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
