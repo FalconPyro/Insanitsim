@@ -5,7 +5,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import falconpyro.mods.insanitsim.lib.LibModInfo;
+import falconpyro.mods.insanitsim.common.lib.LibModInfo;
 import falconpyro.mods.insanitsim.proxy.CommonProxy;
 
 /**

@@ -8,6 +8,6 @@ public class LibModInfo {
             MODID = "insanitsim",
             NAME = "Insanitsim",
             VERSION = "0.1",
-            CLIENT_PROXY = "falconpyro.mods.insanitsim.common.proxy.ClientProxy",
-            COMMON_PROXY = "falconpyro.mods.insanitsim.common.proxy.CommonProxy";
+            CLIENT_PROXY = "falconpyro.mods.insanitsim.proxy.ClientProxy",
+            COMMON_PROXY = "falconpyro.mods.insanitsim.proxy.CommonProxy";
 }
