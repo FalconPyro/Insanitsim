@@ -12,11 +12,11 @@ import net.minecraftforge.oredict.OreDictionary;
 /**
  * Created by falcon on 30/12/15.
  */
-public class ForgeEventHandler {
+public class ForgeEventHandler extends ForgeEventHandlerBase{
 
-    public ForgeEventHandler(){
-        MinecraftForge.EVENT_BUS.register(this);
-    }
+//    public ForgeEventHandler(){
+//        MinecraftForge.EVENT_BUS.register(this);
+//    }
 
     @SubscribeEvent
     public void bonemealEvent(BonemealEvent event) {
@@ -33,14 +33,6 @@ public class ForgeEventHandler {
                     }
                 }
             }
-        }
-    }
-
-    @SubscribeEvent
-    public void tooltipEvent(ItemTooltipEvent event) {
-        int[] oreIDs = OreDictionary.getOreIDs(event.itemStack);
-        for(int id : oreIDs) {
-            event.toolTip.add(OreDictionary.getOreName(id));
         }
     }
 }
