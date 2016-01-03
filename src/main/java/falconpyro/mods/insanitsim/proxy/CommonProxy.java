@@ -3,10 +3,10 @@ package falconpyro.mods.insanitsim.proxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import falconpyro.mods.insanitsim.config.InsanitsimConfig;
-import falconpyro.mods.insanitsim.content.InsanitsimContent;
-import falconpyro.mods.insanitsim.content.recipe.InsanitsimRecipes;
-import falconpyro.mods.insanitsim.event.ForgeEventHandler;
+import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
+import falconpyro.mods.insanitsim.common.content.InsanitsimContent;
+import falconpyro.mods.insanitsim.common.content.recipe.InsanitsimRecipes;
+import falconpyro.mods.insanitsim.common.event.ForgeEventHandler;
 import net.minecraftforge.common.config.Configuration;
 
 /**

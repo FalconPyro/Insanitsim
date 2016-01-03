@@ -1,4 +1,4 @@
-package falconpyro.mods.insanitsim.content.item;
+package falconpyro.mods.insanitsim.common.content.item;
 
 import net.minecraft.item.Item;
 

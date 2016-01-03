@@ -1,15 +1,13 @@
-package falconpyro.mods.insanitsim.event;
+package falconpyro.mods.insanitsim.common.event;
 
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import falconpyro.mods.insanitsim.config.InsanitsimConfig;
+import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.BonemealEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.oredict.OreDictionary;
-
-import java.util.List;
 
 /**
  * Created by falcon on 30/12/15.

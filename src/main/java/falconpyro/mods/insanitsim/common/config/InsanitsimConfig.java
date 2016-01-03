@@ -1,4 +1,4 @@
-package falconpyro.mods.insanitsim.config;
+package falconpyro.mods.insanitsim.common.config;
 
 import net.minecraftforge.common.config.Configuration;
 
@@ -9,6 +9,15 @@ public class InsanitsimConfig {
     public static boolean bonemealCactus = true;
     public static boolean allowCactusMaterialCrafting = true;
     public static boolean allowCactusPickaxeCrafting = true;
+    public static boolean allowCactusAxeCrafting = true;
+    public static boolean allowCactusShovelCrafting = true;
+    public static boolean allowCactusHoeCrafting = true;
+    public static boolean allowCactusSwordCrafting = true;
+    public static boolean allowCactusFoodCrafting = true;
+    public static boolean allowCactusHelmetCrafting = true;
+    public static boolean allowCactusChestplateCrafting = true;
+    public static boolean allowCactusLeggingCrafting = true;
+    public static boolean allowCactusBootsCrafting = true;
 
     public static void init(Configuration config) {
         config.load();

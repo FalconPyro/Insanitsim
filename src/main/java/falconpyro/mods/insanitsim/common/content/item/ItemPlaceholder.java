@@ -1,8 +1,8 @@
-package falconpyro.mods.insanitsim.content.item;
+package falconpyro.mods.insanitsim.common.content.item;
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import falconpyro.mods.insanitsim.content.InsanitsimContent;
-import falconpyro.mods.insanitsim.lib.LibModInfo;
+import falconpyro.mods.insanitsim.common.content.InsanitsimContent;
+import falconpyro.mods.insanitsim.common.lib.LibModInfo;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

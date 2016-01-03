@@ -1,8 +1,8 @@
-package falconpyro.mods.insanitsim.content;
+package falconpyro.mods.insanitsim.common.content;
 
-import falconpyro.mods.insanitsim.content.inventory.InsanitsimTab;
-import falconpyro.mods.insanitsim.content.item.InsanitsimItems;
-import falconpyro.mods.insanitsim.content.recipe.InsanitsimRecipes;
+import falconpyro.mods.insanitsim.common.content.inventory.InsanitsimTab;
+import falconpyro.mods.insanitsim.common.content.item.InsanitsimItems;
+import falconpyro.mods.insanitsim.common.content.recipe.InsanitsimRecipes;
 import net.minecraft.creativetab.CreativeTabs;
 
 /**
