@@ -3,9 +3,12 @@ package falconpyro.mods.insanitsim.proxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.ExistingSubstitutionException;
+import cpw.mods.fml.common.registry.GameRegistry;
 import falconpyro.mods.insanitsim.common.config.AdvancedConfig;
 import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
 import falconpyro.mods.insanitsim.common.content.InsanitsimContent;
+import falconpyro.mods.insanitsim.common.content.item.FalconBow;
 import falconpyro.mods.insanitsim.common.content.recipe.InsanitsimRecipes;
 import falconpyro.mods.insanitsim.common.event.ForgeEventHandler;
 import falconpyro.mods.insanitsim.common.lib.LibModInfo;
@@ -27,6 +30,7 @@ public class CommonProxy {
         InsanitsimConfig.init(new Configuration(new File(configDir + "/Common.cfg")));
         if(InsanitsimConfig.useAdvancedConfig)
             AdvancedConfig.init(new Configuration(new File(configDir + "/Advanced.cfg")));
+
         InsanitsimContent.init();
     }
 
