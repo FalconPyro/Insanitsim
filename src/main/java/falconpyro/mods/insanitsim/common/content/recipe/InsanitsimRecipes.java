@@ -1,5 +1,6 @@
 package falconpyro.mods.insanitsim.common.content.recipe;
 
+import falconpyro.mods.insanitsim.Insanitsim;
 import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
 import falconpyro.mods.insanitsim.common.content.item.InsanitsimItems;
 import net.minecraft.init.Blocks;
@@ -20,21 +21,25 @@ public class InsanitsimRecipes {
             OD_WOODEN_STICK = "stickWood";
 
     public static void init() {
-        cactusMaterial = new ShapedOreRecipe(InsanitsimItems.cactusMaterial,
-            " c ",
-            "cic",
-            " c ",
-            'c', Blocks.cactus,
-            'i', OD_IRON_INGOT
-        );
+        if(InsanitsimConfig.allowCactusMaterialCrafting) {
+            cactusMaterial = new ShapedOreRecipe(InsanitsimItems.cactusMaterial,
+                    " c ",
+                    "cic",
+                    " c ",
+                    'c', Blocks.cactus,
+                    'i', OD_IRON_INGOT
+            );
+        }
 
-        cactusPickaxe = new ShapedOreRecipe(InsanitsimItems.cactusPickaxe,
-            "ccc",
-            " s ",
-            " s ",
-            's', OD_WOODEN_STICK,
-            'c', InsanitsimItems.cactusMaterial
-        );
+        if(InsanitsimConfig.allowCactusPickaxeCrafting) {
+            cactusPickaxe = new ShapedOreRecipe(InsanitsimItems.cactusPickaxe,
+                    "ccc",
+                    " s ",
+                    " s ",
+                    's', OD_WOODEN_STICK,
+                    'c', InsanitsimItems.cactusMaterial
+            );
+        }
     }
 
     protected static CraftingManager manager = CraftingManager.getInstance();

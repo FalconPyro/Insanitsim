@@ -1,5 +1,6 @@
 package falconpyro.mods.insanitsim.common.content.item;
 
+import falconpyro.mods.insanitsim.common.config.AdvancedConfig;
 import net.minecraft.item.Item;
 
 /**
@@ -11,7 +12,11 @@ public class InsanitsimItems {
     public static Item cactusHelmet, cactusChestplate, cactusLeggings, cactusBoots;
 
     public static void init() {
-        cactusMaterial   = new ItemPlaceholder("material.cactus");
+        if(AdvancedConfig.registerCactusMaterialDummy) {
+            cactusMaterial = new ItemPlaceholder("material.cactus").setTextureName("diamond");
+        } else {
+            cactusMaterial = new ItemPlaceholder("material.cactus");
+        }
         cactusPickaxe    = new ItemPlaceholder("pickaxe.cactus");
         cactusShovel     = new ItemPlaceholder("shovel.cactus");
         cactusAxe        = new ItemPlaceholder("axe.cactus");
