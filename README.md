@@ -1,5 +1,5 @@
 # Insanitsim
-## Random Mod of Randomness
+## Random mod for Learning things like Git, and random experimentation
 ### To Do
 * Armours
     * Cactus
