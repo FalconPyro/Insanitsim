@@ -1,5 +1,6 @@
 package falconpyro.mods.insanitsim.common.config;
 
+import falconpyro.mods.insanitsim.common.lib.LibConfig;
 import net.minecraftforge.common.config.Configuration;
 
 /**
@@ -26,11 +27,11 @@ public class InsanitsimConfig {
         if(InsanitsimConfig.config == null)
            InsanitsimConfig.config = config;
         config.load();
-            bonemealCactus = config.getBoolean("bonemealCactus", "misc", bonemealCactus, "Allow the use of bonemeal on Vanilla Cactus");
-            allowCactusMaterialCrafting = config.getBoolean("allowCrafting", "items.cactusMaterial", allowCactusMaterialCrafting, "Allow crafting Cactus Material");
-            allowCactusPickaxeCrafting = config.getBoolean("allowCrafting", "items.cactusPickaxe", allowCactusPickaxeCrafting, "Allow crafting Cactus Pickaxe");
+            bonemealCactus = config.getBoolean(LibConfig.KEY_BONEMEAL_CACTUS, LibConfig.CAT_MISC, bonemealCactus, LibConfig.COM_KEY_BONEMEAL_CACTUS);
+            allowCactusMaterialCrafting = config.getBoolean(LibConfig.KEY_ALLOW_CRAFT_CACTUS_MATERIAL, LibConfig.CAT_CRAFTING, allowCactusMaterialCrafting, LibConfig.COM_KEY_ALLOW_CRAFT_CACTUS_MATERIAL);
+            allowCactusPickaxeCrafting = config.getBoolean(LibConfig.KEY_ALLOW_CRAFT_CACTUS_PICK, LibConfig.CAT_CRAFTING, allowCactusPickaxeCrafting, LibConfig.COM_KEY_ALLOW_CRAFT_CACTUS_PICK);
 
-            useAdvancedConfig = config.getBoolean("useAdvancedConfig", "config.advanced", useAdvancedConfig, "This activates the AdvancedConfig, this may cause issues");
+            useAdvancedConfig = config.getBoolean(LibConfig.KEY_ENABLE_ADV_CONFIG, LibConfig.CAT_ADV_CONFIG, useAdvancedConfig, LibConfig.COM_KEY_ENABLE_ADV_CONFIG);
         config.save();
     }
 }

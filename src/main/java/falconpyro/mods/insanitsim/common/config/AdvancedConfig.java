@@ -1,5 +1,6 @@
 package falconpyro.mods.insanitsim.common.config;
 
+import falconpyro.mods.insanitsim.common.lib.LibConfig;
 import net.minecraftforge.common.config.Configuration;
 
 /**
@@ -11,8 +12,8 @@ public class AdvancedConfig {
 
     public static void init(Configuration config) {
         config.load();
-        config.addCustomCategoryComment("items.registration", "All these options may break your saves, use with caution".toUpperCase());
-            registerCactusMaterialDummy = config.getBoolean("registerCactusMaterialDummy", "items.registration", registerCactusMaterialDummy, "Overridden by registerCactusMaterialItem, registers Cactus Material as a placeholder with no functionality, can still be used in crafting");
+        config.addCustomCategoryComment(LibConfig.CAT_ITEM_REG, LibConfig.COM_CAT_ITEM_REG);
+            registerCactusMaterialDummy = config.getBoolean(LibConfig.KEY_REG_CACTUS_MATERIAL_DUMMY, LibConfig.CAT_ITEM_REG, registerCactusMaterialDummy, LibConfig.COM_KEY_REG_CACTUS_MATERIAL_DUMMY);
         config.save();
     }
 }

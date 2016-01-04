@@ -1,5 +1,6 @@
 package falconpyro.mods.insanitsim.client;
 
+import falconpyro.mods.insanitsim.common.lib.LibConfig;
 import net.minecraftforge.common.config.Configuration;
 
 /**
@@ -13,9 +14,9 @@ public class ClientConfig {
 
     public static void init(Configuration config) {
         config.load();
-            displayOreDictNames = config.getBoolean("displayOreDictNames", "tooltip", displayOreDictNames, "Display Ore Dictionary Names");
-            displayFoodSaturation = config.getBoolean("displayFoodSaturation", "tooltip", displayFoodSaturation, "Display The Saturation of food");
-            displayFoodHungerHeal = config.getBoolean("displayFoodHungerHeal", "tooltip", displayFoodHungerHeal, "Display the amount of hunger food restores");
+            displayOreDictNames = config.getBoolean("displayOreDictNames", LibConfig.CAT_TOOLTIP, displayOreDictNames, "Display Ore Dictionary Names");
+            displayFoodSaturation = config.getBoolean("displayFoodSaturation", LibConfig.CAT_TOOLTIP, displayFoodSaturation, "Display The Saturation of food");
+            displayFoodHungerHeal = config.getBoolean("displayFoodHungerHeal", LibConfig.CAT_TOOLTIP, displayFoodHungerHeal, "Display the amount of hunger food restores");
         config.save();
     }
 }
