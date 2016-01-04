@@ -3,8 +3,11 @@ package falconpyro.mods.insanitsim.common.event;
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
+import falconpyro.mods.insanitsim.common.entity.FalconChicken;
+import net.minecraft.entity.passive.EntityChicken;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.player.BonemealEvent;
 import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.oredict.OreDictionary;
@@ -32,6 +35,21 @@ public class ForgeEventHandler extends ForgeEventHandlerBase{
                         }
                     }
                 }
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public void joinWorldEvent(EntityJoinWorldEvent event) {
+        System.out.println(event.entity);
+        System.out.println(event.entity.getClass().getSimpleName());
+        if(!event.world.isRemote) {
+            System.out.println("Test");
+            if (event.entity.getClass() == EntityChicken.class) {
+                System.out.println("You spawned a Chicken");
+                EntityChicken replace = new FalconChicken((EntityChicken) event.entity);
+                event.entity.setDead();
+                event.world.spawnEntityInWorld(replace);
             }
         }
     }

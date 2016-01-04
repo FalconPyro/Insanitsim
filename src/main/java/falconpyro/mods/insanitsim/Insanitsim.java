@@ -5,9 +5,11 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.ExistingSubstitutionException;
 import cpw.mods.fml.common.registry.GameRegistry;
 import falconpyro.mods.insanitsim.common.content.item.FalconBow;
+import falconpyro.mods.insanitsim.common.entity.FalconChicken;
 import falconpyro.mods.insanitsim.common.lib.LibModInfo;
 import falconpyro.mods.insanitsim.proxy.CommonProxy;
 import net.minecraft.block.Block;
@@ -29,6 +31,7 @@ public class Insanitsim {
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         addSubstitutionAliasItem("minecraft:bow", new FalconBow());
+        EntityRegistry.registerGlobalEntityID(FalconChicken.class, "FalconChicken", 121, 10592673, 16711680);
     }
 
     public void addSubstitutionAliasItem(String name, Item item) {
