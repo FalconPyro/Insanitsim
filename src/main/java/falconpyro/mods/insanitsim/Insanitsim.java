@@ -10,12 +10,14 @@ import cpw.mods.fml.common.registry.ExistingSubstitutionException;
 import cpw.mods.fml.common.registry.GameRegistry;
 import falconpyro.mods.insanitsim.common.content.item.FalconBow;
 import falconpyro.mods.insanitsim.common.entity.FalconChicken;
+import falconpyro.mods.insanitsim.common.entity.FalconPlayer;
 import falconpyro.mods.insanitsim.common.lib.LibModInfo;
 import falconpyro.mods.insanitsim.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBow;
 
 /**
  * Created by falcon on 30/12/15.
@@ -26,12 +28,15 @@ public class Insanitsim {
     @SidedProxy(clientSide = LibModInfo.CLIENT_PROXY, serverSide = LibModInfo.COMMON_PROXY)
     public static CommonProxy proxy;
 
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         addSubstitutionAliasItem("minecraft:bow", new FalconBow());
         EntityRegistry.registerGlobalEntityID(FalconChicken.class, "FalconChicken", 121, 10592673, 16711680);
+        Items.diamond.setHarvestLevel("pickaxe", 100);
+        Items.diamond.setHarvestLevel("axe", 100);
+        Items.diamond.setHarvestLevel("shovel", 100);
+        Items.diamond.setHarvestLevel("scoop", 100);
     }
 
     public void addSubstitutionAliasItem(String name, Item item) {

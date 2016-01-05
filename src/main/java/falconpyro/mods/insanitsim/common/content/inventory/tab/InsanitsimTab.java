@@ -1,4 +1,4 @@
-package falconpyro.mods.insanitsim.common.content.inventory;
+package falconpyro.mods.insanitsim.common.content.inventory.tab;
 
 import falconpyro.mods.insanitsim.common.content.item.InsanitsimItems;
 import falconpyro.mods.insanitsim.common.lib.LibModInfo;

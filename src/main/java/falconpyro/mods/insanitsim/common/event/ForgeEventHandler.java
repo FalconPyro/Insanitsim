@@ -4,7 +4,9 @@ import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import falconpyro.mods.insanitsim.common.config.InsanitsimConfig;
 import falconpyro.mods.insanitsim.common.entity.FalconChicken;
+import falconpyro.mods.insanitsim.common.entity.FalconPlayer;
 import net.minecraft.entity.passive.EntityChicken;
+import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
@@ -41,10 +43,7 @@ public class ForgeEventHandler extends ForgeEventHandlerBase{
 
     @SubscribeEvent
     public void joinWorldEvent(EntityJoinWorldEvent event) {
-        System.out.println(event.entity);
-        System.out.println(event.entity.getClass().getSimpleName());
         if(!event.world.isRemote) {
-            System.out.println("Test");
             if (event.entity.getClass() == EntityChicken.class) {
                 System.out.println("You spawned a Chicken");
                 EntityChicken replace = new FalconChicken((EntityChicken) event.entity);
