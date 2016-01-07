@@ -11,6 +11,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import falconpyro.mods.insanitsim.common.content.item.FalconBow;
 import falconpyro.mods.insanitsim.common.entity.FalconChicken;
 import falconpyro.mods.insanitsim.common.entity.FalconPlayer;
+import falconpyro.mods.insanitsim.common.entity.FalconZombie;
 import falconpyro.mods.insanitsim.common.lib.LibModInfo;
 import falconpyro.mods.insanitsim.proxy.CommonProxy;
 import net.minecraft.block.Block;
@@ -33,6 +34,7 @@ public class Insanitsim {
         proxy.preInit(event);
         addSubstitutionAliasItem("minecraft:bow", new FalconBow());
         EntityRegistry.registerGlobalEntityID(FalconChicken.class, "FalconChicken", 121, 10592673, 16711680);
+        EntityRegistry.registerGlobalEntityID(FalconZombie.class, "FalconZombie", 122);
         Items.diamond.setHarvestLevel("pickaxe", 100);
         Items.diamond.setHarvestLevel("axe", 100);
         Items.diamond.setHarvestLevel("shovel", 100);

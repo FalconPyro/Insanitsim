@@ -13,7 +13,6 @@ import net.minecraftforge.oredict.OreDictionary;
  */
 public class ClientForgeEventHandler extends ForgeEventHandlerBase{
 
-    @SubscribeEvent
     public void tooltipEvent(ItemTooltipEvent event) {
         if(ClientConfig.displayOreDictNames) {
             int[] oreIDs = OreDictionary.getOreIDs(event.itemStack);

@@ -10,6 +10,7 @@ buildscript {
             url = "https://oss.sonatype.org/content/repositories/snapshots/"
         }
     }
+
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
@@ -23,7 +24,7 @@ archivesBaseName = "insanitsim"
 
 minecraft {
     version = "1.7.10-10.13.4.1448-1.7.10"
-    runDir = "eclipse"
+    runDir = "eclipse/1.7"
 }
 
 dependencies {
